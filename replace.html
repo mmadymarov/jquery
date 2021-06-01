@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jquery Tutorial</title>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        
+         <!-- get element id via #(id name) and get element class via dot .(class name)-->
+        <script>
+            $("document").ready(function(){
+
+                var newText = $("<p>"); // Get new paragraph tag to replace
+                
+                newText.append("<h1> I just replaced something </h1>");
+
+                $("#texBox").html(newText); // replace textBox to newText via html
+            }); 
+        </script>
+    </head>
+    <body> 
+
+        <div id="texBox">
+            Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Ratione quas veritatis ut cupiditate nihil quidem, 
+            deserunt illo neque cumque necessitatibus 
+            iste non nostrum nam maiores, quasi expedita impedit minima. Expedita.
+        </div>
+    </body>
+</html>
